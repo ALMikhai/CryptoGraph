@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="443.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <DatePicker id="DateFrom" layoutX="620.0" layoutY="25.0" AnchorPane.rightAnchor="14.0" />
+      <DatePicker id="DateTo" layoutX="620.0" layoutY="73.0" AnchorPane.rightAnchor="14.0" />
+      <LineChart id="MainChart" layoutX="14.0" layoutY="14.0" prefHeight="412.0" prefWidth="500.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="294.0" AnchorPane.topAnchor="14.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <JFXListView id="CoinList" layoutX="548.0" layoutY="112.0" prefHeight="314.0" prefWidth="246.0" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="112.0" />
+   </children>
+</AnchorPane>
